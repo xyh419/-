@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cHelpSettings>
+                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <project name="mipi_dsi_ek_ra8p1_ep">
+                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider"/>
+                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </project>
+                                                
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <project name="ra8p1_my_qiansai">
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider"/>
+    </project>
+                                    
+
+
+
+
+
+
+
+
+</cHelpSettings>

@@ -1,0 +1,8 @@
+13:09:12 **** 项目mipi_dsi_ek_ra8p1_ep配置Debug的增量构建 ****
+make -r --output-sync -j20 all 
+llvm-size --format=berkeley "mipi_dsi_ek_ra8p1_ep.elf"
+   text	   data	    bss	    dec	    hex	filename
+  28770	      2	1846936	1875708	 1c9efc	mipi_dsi_ek_ra8p1_ep.elf
+
+13:09:12 Build Finished. 0 errors, 0 warnings. (took 150ms)
+

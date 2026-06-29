@@ -1,0 +1,64 @@
+20:10:25 **** 项目ra8p1_my_qiansai配置Debug的增量构建 ****
+make -r -j20 all 
+Building file: ../src/hal_entry.c
+Building file: ../src/hal_warmstart.c
+Building file: ../ra_gen/hal_data.c
+Building file: ../ra_gen/common_data.c
+Building file: ../ra_gen/main.c
+Building file: ../ra_gen/pin_data.c
+Building file: ../ra_gen/vector_data.c
+Building file: ../ra/fsp/src/r_ioport/r_ioport.c
+Building file: ../ra/fsp/src/r_sci_b_uart/r_sci_b_uart.c
+Building file: ../ra/fsp/src/bsp/mcu/ra8p1/bsp_linker.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_common.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_clocks.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_macl.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_ipc.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_ospi_b.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_guard.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_io.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_delay.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_irq.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_group_irq.c
+../src/hal_entry.c:10:5: warning: no previous declaration for '_write' [-Wmissing-declarations]
+   10 | int _write(int fd ,char*p8uffer,int size){
+      |     ^~~~~~
+../src/hal_entry.c: In function '_write':
+../src/hal_entry.c:11:41: warning: pointer targets in passing argument 2 of '((const uart_api_t *)g_uart9.p_api)->write' differ in signedness [-Wpointer-sign]
+   11 |     g_uart9.p_api->write(g_uart9.p_ctrl,p8uffer,size);
+      |                                         ^~~~~~~
+      |                                         |
+      |                                         char *
+../src/hal_entry.c:11:41: note: expected 'const uint8_t * const' {aka 'const unsigned char * const'} but argument is of type 'char *'
+../src/hal_entry.c:11:49: warning: conversion to 'uint32_t' {aka 'const long unsigned int'} from 'int' may change the sign of the result [-Wsign-conversion]
+   11 |     g_uart9.p_api->write(g_uart9.p_ctrl,p8uffer,size);
+      |                                                 ^~~~
+../src/hal_entry.c:10:16: warning: unused parameter 'fd' [-Wunused-parameter]
+   10 | int _write(int fd ,char*p8uffer,int size){
+      |            ~~~~^~
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_sbrk.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_sdram.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_security.c
+Building file: ../ra/fsp/src/bsp/mcu/all/bsp_register_protection.c
+Building file: ../ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.c
+Building file: ../ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.c
+Building file: ../ra/board/ra8p1_ek/board_init.c
+Building file: ../ra/board/ra8p1_ek/board_leds.c
+Building target: ra8p1_my_qiansai.elf
+F:/project_of_competition/qian_sai/e2s/toolchains/gcc_arm/13.2.rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld.exe: F:/project_of_competition/qian_sai/e2s/toolchains/gcc_arm/13.2.rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+dp/hard\libg_nano.a(libc_a-closer.o): in function `_close_r':
+closer.c:(.text._close_r+0xc): warning: _close is not implemented and will always fail
+F:/project_of_competition/qian_sai/e2s/toolchains/gcc_arm/13.2.rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld.exe: F:/project_of_competition/qian_sai/e2s/toolchains/gcc_arm/13.2.rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+dp/hard\libg_nano.a(libc_a-fstatr.o): in function `_fstat_r':
+fstatr.c:(.text._fstat_r+0xe): warning: _fstat is not implemented and will always fail
+F:/project_of_competition/qian_sai/e2s/toolchains/gcc_arm/13.2.rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld.exe: F:/project_of_competition/qian_sai/e2s/toolchains/gcc_arm/13.2.rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+dp/hard\libg_nano.a(libc_a-isattyr.o): in function `_isatty_r':
+isattyr.c:(.text._isatty_r+0xc): warning: _isatty is not implemented and will always fail
+F:/project_of_competition/qian_sai/e2s/toolchains/gcc_arm/13.2.rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld.exe: F:/project_of_competition/qian_sai/e2s/toolchains/gcc_arm/13.2.rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+dp/hard\libg_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+lseekr.c:(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+F:/project_of_competition/qian_sai/e2s/toolchains/gcc_arm/13.2.rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/bin/ld.exe: F:/project_of_competition/qian_sai/e2s/toolchains/gcc_arm/13.2.rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+dp/hard\libg_nano.a(libc_a-readr.o): in function `_read_r':
+readr.c:(.text._read_r+0x10): warning: _read is not implemented and will always fail
+arm-none-eabi-objcopy -O srec "ra8p1_my_qiansai.elf"  "ra8p1_my_qiansai.srec"
+arm-none-eabi-size --format=berkeley "ra8p1_my_qiansai.elf"
+   text	   data	    bss	    dec	    hex	filename
+  18148	    460	  18016	  36624	   8f10	ra8p1_my_qiansai.elf
+
+20:10:27 Build Finished. 0 errors, 9 warnings. (took 1s.901ms)
+
