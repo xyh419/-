@@ -1,0 +1,13 @@
+﻿# 编译产物
+Debug/
+build/
+*.o
+*.d
+*.o.in
+*.d.in
+*.obj
+*.out
+*.exe
+*.elf
+*.hex
+*.bin
